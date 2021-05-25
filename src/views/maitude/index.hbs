@@ -1,0 +1,26 @@
+
+  <section id="hero">
+
+    <div class="container">
+      <div class="row d-flex align-items-center">
+      <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+        <h1>¿Quieres repasar tus temas escolares?</h1>
+        <h2>Revisa contenidos, realiza actividades y continua aprendiendo con MAITUDE</h2>
+        {{#if user}}
+           {{#if user.admin}}
+           <a href="principal" class="btn-get-started scrollto">Opciones de administrador</a>
+           {{else}}
+           <a href="principal" class="btn-get-started scrollto">Ver mis contenidos</a>
+           {{/if}}
+        
+        {{else}}
+        <a href="login" class="btn-get-started scrollto">Iniciar Sesión</a>
+        {{/if}}
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+        <img src="/img/maitude.png" class="img-fluid" alt="">
+      </div>
+    </div>
+    </div>
+
+  </section>

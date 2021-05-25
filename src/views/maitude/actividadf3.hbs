@@ -1,0 +1,74 @@
+<section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 3</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado1">
+<input type="hidden" value="3" name="act1">
+<input type="hidden" value="1" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1">
+      <div class="accordion_header">
+        ¿Quién dijo que los cuerpos más pesados llegarían al suelo antes que los ligeros?
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > Aristóteles.</p>
+    <p ><input type="radio" name="p1"  value="1"> Newton.</p>
+    <p ><input type="radio" name="p1"  value="2"> Galileo.</p>
+    <p ><input type="radio" name="p1" value="3"> Kepler.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        ¿Quién dijo que todos los cuerpos debían caer con la misma rapidez en ausencia de aire o cualquier otro agente externo que se opusiera a su caída?.
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2" value="3"> Aristoteles.</p>
+        <p ><input type="radio" name="p2"  value="0"> Newton.</p>
+        <p ><input type="radio" name="p2" value="1"> Galileo.</p>
+        <p ><input type="radio" name="p2" value="2"> Kepler.</p>
+        
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        Son aportes de Galileo, excepto:
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> Ley de la caída.</p>
+        <p ><input type="radio" name="p3"  value="1"> Movimiento del péndulo y sus oscilaciones.</p>
+        <p ><input type="radio" name="p3"  value="2"> Invención del telescopio.</p>
+        <p ><input type="radio" name="p3"  value="3"> Método científico.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        ¿Quién descubrió que la Vía Láctea es un conjunto de estrellas?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="1"> Aristoteles.</p>
+        <p ><input type="radio" name="p4"  value="0"> Newton.</p>
+        <p ><input type="radio" name="p4"  value="3"> Galileo.</p>
+        <p ><input type="radio" name="p4"  value="2"> Kepler.</p>
+        
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

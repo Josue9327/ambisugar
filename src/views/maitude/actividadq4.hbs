@@ -1,0 +1,72 @@
+<section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 4</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado4">
+<input type="hidden" value="4" name="act4">
+<input type="hidden" value="0" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1">
+      <div class="accordion_header">
+        ¿Cuál es un metodo de separación de mezclas heterogéneas?
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > Cristalización.</p>
+    <p ><input type="radio" name="p1"  value="1"> Cromatografía.</p>
+    <p ><input type="radio" name="p1"  value="2"> Evaporación.</p>
+    <p ><input type="radio" name="p1" value="3"> Decantación</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        Los siguientes son ejemplos de filtración, excepto:
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2"  value="0"> Preparación de café.</p>
+        <p ><input type="radio" name="p2" value="1"> Filtros de aire.</p>
+        <p ><input type="radio" name="p2" value="2"> Separación de la sal mineral.</p>
+        <p ><input type="radio" name="p2" value="3"> Elaboración de infusiones.</p>
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        ¿Cuál no es un metodo de separación de mezclas homogéneas?.
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> Evaporación.</p>
+        <p ><input type="radio" name="p3"  value="1"> Tamizado.</p>
+        <p ><input type="radio" name="p3"  value="2"> Extracción con disolventes.</p>
+        <p ><input type="radio" name="p3"  value="3"> Destilación.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        Los siguientes son ejemplos de destilación, excepto:
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="0"> Secar la ropa al sol.</p>
+        <p ><input type="radio" name="p4"  value="1"> Producción de perfumes.</p>
+        <p ><input type="radio" name="p4"  value="2"> La refinación del petróleo.</p>
+        <p ><input type="radio" name="p4"  value="3"> El cracking catalítico.</p>
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

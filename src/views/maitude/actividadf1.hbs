@@ -1,0 +1,72 @@
+<section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 1</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado4">
+<input type="hidden" value="1" name="act4">
+<input type="hidden" value="1" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1">
+      <div class="accordion_header">
+        ¿La distancia es una magnitud?
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > Tensoriales.</p>
+    <p ><input type="radio" name="p1"  value="1"> Vectorial.</p>
+    <p ><input type="radio" name="p1"  value="2"> Extensiva.</p>
+    <p ><input type="radio" name="p1" value="3"> Escalar.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        ¿El desplazamiento es una magnitud?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2"  value="0"> Escalar.</p>
+        <p ><input type="radio" name="p2" value="1"> Intensiva.</p>
+        <p ><input type="radio" name="p2" value="2"> Vectorial.</p>
+        <p ><input type="radio" name="p2" value="3"> Tensorial.</p>
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        Los siguientes son ejemplos de rapidez instantánea, excepto:
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> La rapidez que lee un policía en su radar de un auto.</p>
+        <p ><input type="radio" name="p3"  value="1"> La rapidez total de un recorrido en bicicleta.</p>
+        <p ><input type="radio" name="p3"  value="2"> Rapidez que indica el velocímetro de un automóvil.</p>
+        <p ><input type="radio" name="p3"  value="3"> La rapidez que hizo Carla al correr en el tercer minuto.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        ¿Qué valor se encuentra en el eje horizontal(x) de un plano cartesiano?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="0"> Tiempo.</p>
+        <p ><input type="radio" name="p4"  value="1"> Velocidad.</p>
+        <p ><input type="radio" name="p4"  value="2"> Posición.</p>
+        <p ><input type="radio" name="p4"  value="3"> Distancia.</p>
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

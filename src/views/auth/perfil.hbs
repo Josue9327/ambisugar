@@ -1,0 +1,74 @@
+<section id="hero">
+<br>
+<br>
+<br>
+
+    <div class="container">
+        <div class="row mt-5" >
+            <div class="col-md-7">
+                <br>
+                {{#if username.facebook}}
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                          <th><center>Nombre</center> </th>
+                          <th> <center>Usuario conectado con: </center></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                       <tr>
+                           <td><center>{{{username.nombre_usuario}}}</center> </td>
+                           <td><center>Facebook</center></td>
+                       </tr>
+                    {{else}}
+                        <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                          <th><center>Nombrs</center> </th>
+                          <th> <center>Apellidos</center></th>
+                          <th> <center>fecha de nacimiento</center></th>
+                          <th> <center>Correo</center></th>
+                          {{#if username.admin}}
+                          {{else}}
+                          <th> <center>Acciones</center></th>
+                          {{/if}}
+                          <th> <center>Foto</center></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                       <tr>
+                           <td><center>{{{username.nombre_usuario}}}</center> </td>
+                           <td><center>{{{username.apellidos_usuario}}}</center></td>
+                           <td><center>{{{username.fecha_usuario}}}</center></td>
+                           <td><center>{{{username.correo_usuario}}}</center></td>
+                           {{#if username.admin}}
+                           {{else}}
+                           <td>
+                            <center><a href="editar" class="btn btn-info" >Editar</a><br></
+                            <center>
+                                <form method="POST" action="/borrar_usuario_u">
+                                   <input name="id_usuario" value="{{{username.id_usuario}}}" type="hidden">
+                                   <br>
+                                       <button class="btn btn-info" style="width: 200px; height: 50px; margin-right: 12px; margin-bottom: 10px;">Borrar usuario</button>
+                                   </form>
+                           </td>
+                           {{/if}}
+                            <td> <center><img src="../../img_us/{{{user.foto}}}" alt="" width="100" height="100" style="margin-left: 10px;"></center> </td>
+                       </tr>
+
+                    {{/if}}
+    
+    
+                    </tbody>
+    
+                </table>
+    
+            </div>
+            
+        </div>
+    
+    </div>
+    <br><br><br>
+  </section><!-- End Hero -->

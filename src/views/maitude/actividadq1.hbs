@@ -1,0 +1,72 @@
+   <section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 1</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado1">
+<input type="hidden" value="1" name="act1">
+<input type="hidden" value="0" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1">
+      <div class="accordion_header">
+        ¿Cuál es el objeto de estudio de la Quimica?
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > Las propiedades de las sustancias y sus transformaciones.</p>
+    <p ><input type="radio" name="p1"  value="1"> La tabla periodica.</p>
+    <p ><input type="radio" name="p1"  value="2"> Las medicinas y su creación.</p>
+    <p ><input type="radio" name="p1" value="3"> Los minerales de la tierra y sus propiedades.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        ¿Cómo son los efectos del desarrollo tecnológico en la sociedad?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2"  value="0"> Inmediatos.</p>
+        <p ><input type="radio" name="p2" value="1"> Inmediatos y directos.</p>
+        <p ><input type="radio" name="p2" value="2"> Pausados.</p>
+        <p ><input type="radio" name="p2" value="3"> Tardados pero directos.</p>
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        ¿Cuántas toneladas de desechos sólidos se producen a diario en la Cuidad de México?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> 560 000 toneladas.</p>
+        <p ><input type="radio" name="p3"  value="1"> 100 000 toneladas.</p>
+        <p ><input type="radio" name="p3"  value="2"> 12 000 toneladas.</p>
+        <p ><input type="radio" name="p3"  value="3"> 28 965 toneladas.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        ¿Para qué se puede utilizar el unicel?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="0"> Conservación de alimentos.</p>
+        <p ><input type="radio" name="p4"  value="1"> Reducir la contaminación.</p>
+        <p ><input type="radio" name="p4"  value="2"> Calentar comida.</p>
+        <p ><input type="radio" name="p4"  value="3"> Como adhesivo para papel, cartón y madera.</p>
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

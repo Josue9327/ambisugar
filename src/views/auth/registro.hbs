@@ -1,0 +1,72 @@
+<section id="hero">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Registro</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/registro" method="POST" enctype="multipart/form-data">
+                        <div class="input-group form-group">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="nombre_usuario" class="form-control" placeholder="Nombre(s)"
+                                onkeypress="return validarletras(event)" required autocomplete="off">
+
+                        </div>
+                        <div class="input-group form-group">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="apellidos_usuario" class="form-control" placeholder="Apellidos"
+                                onkeypress="return validarletras(event)" autocomplete="off" required>
+
+                        </div>
+                        <div class="input-group form-group">
+                            
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="date" name="fecha_usuario" class="form-control" placeholder="Fecha de nacimiento" required autocomplete="off">
+                            
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="email" name="correo_usuario" class="form-control" placeholder="Correo" required autocomplete="off">
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="contraseña_usuario" class="form-control" pattern="(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" placeholder="Contraseña" title="La contraseña debe tener 8-16 caracteres, contener una letra mayuscula, una minuscula y un numero" required>
+                        </div>
+                        <div class="input-group form-group">
+                            <input type="file" name="imagen" title="sa">
+                            <input type="checkbox" name="term" class="check" required> <p style="color: white; margin-right: 5px; margin-left: 5px; margin-top: 3px;">Acepta nuestros</p> <a href="terminoscon"><p style="margin-top: 4px;">terminos y condiciones</p></a>
+                            
+                             
+                            <br>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="form-group">
+                            <input type="submit" value="Registrar" class="btn float-right login_btn">
+                        </div>
+                        {{{message}}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</section><!-- End Hero -->

@@ -1,0 +1,45 @@
+<section id="hero">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="/js/PDF.js"></script>
+    <div class="container">
+        <div class="row mt-5" >
+            <div class="col-md-7">
+                <center><h1>Resultados</h1></center>
+                <br> <br>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                          <th><center>Actividad</center> </th>
+                          <th> <center>Resultados</center></th>
+                          <th> <center>Fecha</center></th>
+                        
+                        </tr>
+    
+                    </thead>
+                    <tbody>
+                   {{#each obj}}
+                       <tr>
+                           <td><center>Actividad No. {{{actividad}}}</center> </td>
+                           <td><center>{{{puntaje}}}</center></td>
+                           <td><center>{{{fecha}}}</center></td>
+                           
+                       </tr>
+                     {{/each}}
+                    </tbody>
+    
+                </table>
+    
+            </div>
+            
+            <div class="col-md-1" style="margin-left: 10px; margin-right: 5px;">
+            
+                
+                   <center>
+                        <button class="btn-warning" style="width: 200px; height: 50px; margin-right: 12px;" onclick="generatePDF()">Descarga</button>
+                   </center> 
+            
+            </div>
+        </div>
+    
+    </div>
+  </section><!-- End Hero -->

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maitude</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+    <!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!--Custom styles-->
+  <link rel="stylesheet" href="/css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+<script src = "/socket.io/socket.io.js" defer></script>
+<script src="/js/validar_campos.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="/"><span>.</span>MAITUDE<span>.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+
+          <li class="active"><a href="/acerca">Acerca de</a></li>
+          {{#if user}}
+          <li class="active"><a href="/perfil">Perfil</a></li>
+          {{#if user.admin}}
+          <li class="active"><a href="/principal">Usuarios</a></li>
+          {{else}}
+          <li class="active"><a href="/principal">Inicio</a></li>
+          {{/if}}
+          {{#if user.facebook}}
+          {{else}}
+          <li class="active"><a href="/elegirchat">Chat</a></li>
+          {{/if}}
+          <li class="get-started"><a href="/logout">Cerrar Sesión</a></li>
+          <li class="get-started"><img src="../../img_us/{{{user.foto}}}" alt="" width="50" height="50" style="margin-left: 10px;"></li>
+          {{else}}
+          
+          <li class="get-started"><a href="/registro">Registrarse</a></li>
+          <li class="get-started"><a href="/login">Iniciar Sesión</a></li>
+          {{/if}}
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header>
+    {{{ body }}}
+
+
+
+
+<footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Maitude</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       <a href="/terminoscon">Términos y Condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/vendor/venobox/venobox.min.js"></script>
+  <script src="/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,72 @@
+<section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 8</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado1">
+<input type="hidden" value="8" name="act1">
+<input type="hidden" value="2" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1">
+      <div class="accordion_header">
+       Factoriza la siguiente expresión: x^2+5x-50
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > (x+10)(x-5) </p>
+    <p ><input type="radio" name="p1"  value="1"> (x+1)(x-10)</p>
+    <p ><input type="radio" name="p1"  value="2"> (x+5)(x-5)</p>
+    <p ><input type="radio" name="p1" value="3"> (x-3)(x-2) </p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        Factoriza la siguiente expresión: x^2-8x-48
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2"  value="0"> (x+4)(x-2)</p>
+        <p ><input type="radio" name="p2" value="1"> (x+4)(x-12)  </p>
+        <p ><input type="radio" name="p2" value="2"> (x+12)(x-3) </p>
+        <p ><input type="radio" name="p2" value="3"> (x+1)(x-8)</p>
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        Factoriza la siguiente expresión: 5x^2+7x+2
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> (x+1)(x-2)</p>
+        <p ><input type="radio" name="p3"  value="1"> (5x+9)(5x-5) </p>
+        <p ><input type="radio" name="p3"  value="2"> (x+1)(5x+2)</p>
+        <p ><input type="radio" name="p3"  value="3"> (x-1)(5x-2) </p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        Factoriza la siguiente expresión: 〖2x〗^2+7x+3
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="0"> (x+3)(2x-1)</p>
+        <p ><input type="radio" name="p4"  value="1"> (x-3)(2x-3) </p>
+        <p ><input type="radio" name="p4"  value="2"> (x+1)(2x-3)</p>
+        <p ><input type="radio" name="p4"  value="3"> (x+3)(2x+1) </p>
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

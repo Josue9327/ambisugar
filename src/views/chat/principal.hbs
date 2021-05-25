@@ -1,0 +1,19 @@
+<link type="text/css" rel="stylesheet" href="css/chat.css"/>
+<section id="hero">
+  <div id="caja">
+      <center><h1 style="color: white;">Chat</h1></center>
+      <center><form method="POST" action="/ingresarvideo"> <input hidden  name="id_chat"  value="{{{usuarios.id_chat}}}"><input style="width: 200px; margin-bottom: 10px;" class="btn login_btn" type="submit" value="Iniciar videochat"></form></center>
+    <div id="chatbox"></div>
+        <input hidden  id="minombre"  value="{{{usuarios.minombre}}}">
+        <input hidden  id="sunombre"  value="{{{usuarios.sunombre}}}">
+        <input hidden  id="sucorreo"  value="{{{usuarios.sucorreo}}}">
+        <input hidden  id="micorreo"  value="{{{usuarios.micorreo}}}">
+        <center><input id="message" type="text" id="usermsg" size="63" placeholder="mensaje"/>
+        <br>
+        <input id="send" type="button" c9lass="btn-info"  id="submitmsg" value="Enviar" /></center>
+        
+</div>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</section>

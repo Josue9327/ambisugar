@@ -1,0 +1,95 @@
+<section id="hero">
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="/js/PDF.js"></script>
+    <div class="container">
+        <div class="row mt-5" >
+            <div class="col-md-7">
+                <center><h1>Buscar Usuarios</h1></center>
+                {{{message}}}
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                          <form method="POST" action="/buscar_usuario">
+                          <th> <center><input type="search" name="u_buscado" style="width: 215px;" placeholder="Ingrese el correo del usuario"></center></th>
+                          <th> <center><button class="btn-warning" style="width: 200px; height: 50px; margin-right: 12px;">Buscar</button></center></th>
+                          </form>
+                        </tr>
+    
+                    </thead>
+                    </table>
+                    <table  class="table table-bordered table-hover">
+                    <tbody>
+                   {{#if rows}}
+                        <tr>
+                           <td><center>id</center> </td>
+                           <td><center>{{{rows.id_usuario}}}</center> </td>
+                       </tr>
+                       <tr>
+                           <td><center>Nombre</center> </td>
+                           <td><center>{{{rows.nombre_usuario}}} {{{rows.apellidos_usuario}}}</center></td>
+                       </tr>
+                       <tr>
+                           <td><center>Nacimiento</center> </td>
+                           <td><center>{{{rows.fecha_usuario}}}</center> </td>
+                       </tr>
+                       <tr>
+                           <td><center>foto</center></td>
+                           <td><center><img src="../../img_us/{{{rows.foto}}}" alt="" width="100" height="100" style="margin-left: 10px;"></center> </td>
+                       </tr>
+                       <tr>
+                           <td><center>Opciones</center></td>
+                           <td>
+                               <center>
+                                   <form method="POST" action="/borrar_usuario">
+                                   <input name="correo_usuario" value="{{{rows.correo_usuario}}}" type="hidden">
+                                   <input name="id_usuario" value="{{{rows.id_usuario}}}" type="hidden">
+                                   <input type="search" name="u_buscado" style="width: 500px; margin-bottom: 10px;" placeholder="Ingrese el correo del usuario de nuevo para poder borrarlo">
+                                   <br>
+                                       <button class="btn-warning" style="width: 200px; height: 50px; margin-right: 12px; margin-bottom: 10px;">Borrar usuario</button>
+                                   </form>
+                                   <form method="POST" action="/editar_usuarios">
+                                   <input type="hidden" value="{{{rows.id_usuario}}}" name="id_usuario">
+                                   <input type="hidden" value="{{{rows.nombre_usuario}}}" name="nombre_usuario">
+                                   <input type="hidden" value="{{{rows.apellidos_usuario}}}" name="apellidos_usuario">
+                                   <input type="hidden" value="{{{rows.correo_usuario}}}" name="correo_usuario">
+                                   <input type="hidden" value="{{{rows.fecha_usuario}}}" name="fecha_usuario">
+                                   <button class="btn-warning" style="width: 200px; height: 50px; margin-right: 12px;">Editar</button>
+                                    </form>
+                               </center>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>Matemáticas</td>
+                           <td><form method="POST" action="/borrar_pagina_m">
+                                   <input type="hidden" name="id_usuario" value="{{{rows.id_usuario}}}">
+                                   <center><button class="btn-info" style="width: 200px; height: 50px;">Visulizar actividades</button></center>
+                              </form>
+                            </td>
+                       </tr>
+                       <tr>
+                           <td>Fisica</td>
+                           <td><form method="POST" action="/borrar_pagina_f">
+                                  <input type="hidden" name="id_usuario" value="{{{rows.id_usuario}}}">
+                                   <center><button class="btn-info" style="width: 200px; height: 50px;">Visulizar actividades</button></center>
+                              </form>
+                            </td>
+                       </tr>
+                       <tr>
+                           <td>Quimica</td>
+                           <td><form method="POST" action="/borrar_pagina_q">
+                                   <input type="hidden" name="id_usuario" value="{{{rows.id_usuario}}}">
+                                   <center><button class="btn-info" style="width: 200px; height: 50px;">Visulizar actividades</button></center>
+                              </form>
+                            </td>
+                       </tr>
+                     {{/if}}
+                    </tbody>
+                     </table>
+                
+    
+            </div>
+            
+        </div>
+    
+    </div>
+  </section><!-- End Hero -->

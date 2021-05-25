@@ -1,0 +1,72 @@
+<section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 3</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado3">
+<input type="hidden" value="3" name="act3">
+<input type="hidden" value="0" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1">
+      <div class="accordion_header">
+        Los siguientes son ejemplos de mezclas, excepto:
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > Agua de jamaica.</p>
+    <p ><input type="radio" name="p1"  value="1"> El petróleo.</p>
+    <p ><input type="radio" name="p1"  value="2"> El yodo.</p>
+    <p ><input type="radio" name="p1" value="3"> El aire.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        ¿Qué es una mezcla homogénea?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2"  value="0"> Es aquella que posee una composición no uniforme en la cual se pueden distinguir fácilmente sus componentes.</p>
+        <p ><input type="radio" name="p2" value="1"> Mezcla en la cual no se distinguen sus componentes y en la que la composición es uniforme.</p>
+        <p ><input type="radio" name="p2" value="2"> Es un material formado por dos o más componentes unidos, pero no combinados químicamente.</p>
+        <p ><input type="radio" name="p2" value="3"> Ninguna de las anteriores.</p>
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        ¿Qué son los compósitos?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> Mezclas heterogéneas sólidas de dos o más sustancias.</p>
+        <p ><input type="radio" name="p3"  value="1"> Mezcla homogénea líquida de varias sustancias.</p>
+        <p ><input type="radio" name="p3"  value="2"> Mezclas heterogéneas líquida de dos o más sustancias.</p>
+        <p ><input type="radio" name="p3"  value="3"> Mezcla heterogénea líquida de solo dos sustancias.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        ¿Qué es la concentración?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="0"> Mezcla homogénea a nivel molecular o iónico de dos o más sustancias puras que no reaccionan entre sí, cuyos componentes se encuentran en proporciones variables.</p>
+        <p ><input type="radio" name="p4"  value="1"> Sustancia química en la que se diluye un soluto, resultando en una disolución.</p>
+        <p ><input type="radio" name="p4"  value="2"> Sustancia que se disuelve en el solvente para producir una mezcla homogénea.</p>
+        <p ><input type="radio" name="p4"  value="3"> Medida de la cantidad de soluto presente en cierta cantidad de disolución.</p>
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

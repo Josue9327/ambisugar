@@ -1,0 +1,70 @@
+<section id="hero" style="height: 569px;">
+<div class="container">
+           {{{message}}}
+        <div class="d-flex justify-content-center h-100">
+        
+            <div class="card1">
+                 
+                <div class="card-header">
+                    <h3>Ingreso al chat</h3>
+                   
+                </div>
+                <div class="card-body">
+                    <h2>Escoja un usuario de su lista de amigos para chatear</h2>
+                    <form action="/elegirchat" method="POST">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="search" autocomplete="off" name="chat_usuario" list="listamodelos" class="form-control" placeholder="Usuario">
+                            <datalist id="listamodelos">
+                                {{#each obj}}
+                            <option value="{{{correo_amigo}}}">
+                                {{/each}}
+                            </datalist>
+                        </div>
+
+                        <div class="card-footer">
+                    <div class="form-group">
+                        <input type="submit" value="Iniciar" class="btn float-right login_btn">
+                    </div>
+                </div>
+                    </form>
+                </div>
+                
+            </div>
+            <table style="margin-top: 250px; margin-left: 20px; margin-right: 20px;">
+                    <td><h1> Ó </h1></td>
+            </table>
+            
+            <div class="card1">
+                 
+                <div class="card-header">
+                    <h3>Agrega un nuevo amigo</h3>
+                   
+                </div>
+                <div class="card-body">
+                    <h2>Ingresa el correo del usuario a quien deseas agregar</h2>
+                    <form action="/agregaramigo" method="POST">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="nuevo_amigo" class="form-control" placeholder="Usuario">
+                        </div>
+
+                        <div class="card-footer">
+                    <div class="form-group">
+                        <input type="submit" value="Agregar" class="btn float-right login_btn">
+                    </div>
+                </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <br> 
+    <br>
+    <br>
+    </section>

@@ -1,0 +1,52 @@
+{{#if user.admin}}
+  <section id="hero">
+  <br>
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><center><img src="/img_us/default.jpg" class="img-fluid"></center></th>
+          </tr>
+          <tr>
+            <th scope="col"><center><a href="/edit_usuarios"><button class="btn-info">Usuarios</button></a></center></th>
+          </tr>
+        </thead>
+      
+      </table>
+     
+    </div>
+    <br>
+    <br>
+    <br>
+  </section><!-- End Hero -->
+{{else}} 
+<section id="hero">
+<br>
+<br>
+<br>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <h1></h1>
+          <tr>
+            <th scope="col"><a href="/contenidos/:2"><img src="/img/mate.png" class="img-fluid" alt="" ></a></th>
+            <th scope="col"><a href="/contenidos/:1"><img src="/img/fis.png" class="img-fluid" alt=""></a></th>
+            <th scope="col"><a href="/contenidos/:0"> <img src="/img/quim.png" class="img-fluid" alt=""></a></th>
+          </tr>
+          <tr>
+            <th scope="col"><center><a href="resultados/2"><button class="btn-info">Ver resultados</button></a></center></th>
+            <th scope="col"><center><a href="resultados/1"><button class="btn-info">Ver resultados</button></a></center></th>
+            <th scope="col"><center><a href="resultados/0"><button class="btn-info">Ver resultados</button></a></center></th>
+          </tr>
+        </thead>
+      
+      </table>
+     
+    </div>
+    <br>
+    <br>
+    <br>
+  </section><!-- End Hero -->
+  {{/if}}
+

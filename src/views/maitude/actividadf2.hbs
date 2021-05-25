@@ -1,0 +1,72 @@
+<section id="hero">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".accordion_header").click(function(){
+			   $(".accordion_header").removeClass("active");
+			   $(this).addClass("active");
+			});
+		});
+	</script> 
+<br>
+<br>
+<br>
+<center><strong><h1>Cuestionario 2</h1></strong></center>
+<center><form id="act" method="POST" action="/enviar_resultado3">
+<input type="hidden" value="2" name="act3">
+<input type="hidden" value="1" name="materia">
+<div class="wrapper">
+    <div class="accordion_wrap accordion_1"> 
+      <div class="accordion_header">
+       Es un ejemplo de onda transversal:
+      </div>
+      <div class="accordion_body">
+    <p ><input type="radio" name="p1" value="0" > Un resorte.</p>
+    <p ><input type="radio" name="p1"  value="1"> El corcho de una caña de pescar al entrar al agua.</p>
+    <p ><input type="radio" name="p1"  value="2"> Ola de fanáticos en un estadio.</p>
+    <p ><input type="radio" name="p1" value="3"> Ruido de un motor.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_2">
+      <div class="accordion_header">
+        ¿Qué ondas no requieren un medio para propagarse?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p2"  value="0"> Ondas ionizantes.</p>
+        <p ><input type="radio" name="p2" value="1"> Ondas electromagnéticas.</p>
+        <p ><input type="radio" name="p2" value="2"> Ondas mecánicas.</p>
+        <p ><input type="radio" name="p2" value="3"> Ondas acústicas.</p>
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_3">
+      <div class="accordion_header">
+        ¿Cuál es la unidad de medida de la frecuencia?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p3"  value="0"> Hertz.</p>
+        <p ><input type="radio" name="p3"  value="1"> Pascal.</p>
+        <p ><input type="radio" name="p3"  value="2"> Newton.</p>
+        <p ><input type="radio" name="p3"  value="3"> Mol.</p>
+     
+      </div>
+    </div>
+    <div class="accordion_wrap accordion_4">
+      <div class="accordion_header">
+        ¿Qué cantidad de vibraciones percibe el oído humano?
+      </div>
+      <div class="accordion_body">
+        <p ><input type="radio" name="p4"  value="0"> 0 a 18 Hz.</p>
+        <p ><input type="radio" name="p4"  value="1"> 5 a 10 Hz.</p>
+        <p ><input type="radio" name="p4"  value="2"> 20 000 a 50 000 Hz.</p>
+        <p ><input type="radio" name="p4"  value="3"> 20 a 20 000 Hz.</p>
+      </div>
+    </div>
+   
+  
+  </div>	
+  <br>
+  <p><input type="submit"  class="btn btn-light" value="R E S U L T A D O"></p>
+</form>
+</center>
+  </section><!-- End Hero -->

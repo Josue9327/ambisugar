@@ -1,0 +1,52 @@
+<section id="hero">
+    <br>
+    <br> 
+    <br>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Editar datos</h3>
+                   
+                </div>
+                <div class="card-body">
+                    <form action="/editar" method="POST">
+                        <div class="input-group form-group">
+                            
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="nombre_usuario" class="form-control" value="{{{user.nombre_usuario}}}" placeholder="Nombre(s)">
+                            
+                        </div>
+                        <div class="input-group form-group">
+                            
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="apellidos_usuario" class="form-control" value="{{{user.apellidos_usuario}}}" placeholder="Apellidos">
+                            
+                        </div>
+                        <div class="input-group form-group">
+                            
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="date" name="fecha_usuario" value="{{{user.fecha_usuario}}}" class="form-control" placeholder="Fecha de nacimiento">
+                            
+                        </div>
+                                        <div class="card-footer">
+                    <div class="form-group">
+                        <input type="submit" value="Guardar" class="btn float-right login_btn">
+                    </div>
+                </div>
+                    </form>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br> 
+    <br>
+  </section><!-- End Hero -->
